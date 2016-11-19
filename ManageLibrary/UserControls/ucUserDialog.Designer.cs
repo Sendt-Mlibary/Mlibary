@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucUserDialog));
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.chkResetPassword = new DevExpress.XtraEditors.CheckEdit();
             this.cboPhanQuyen = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtMatKhau2 = new DevExpress.XtraEditors.TextEdit();
             this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
@@ -53,10 +54,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.chkResetPassword = new DevExpress.XtraEditors.CheckEdit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkResetPassword.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboPhanQuyen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
@@ -68,7 +69,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateNamSinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkResetPassword.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -111,6 +111,15 @@
             this.groupControl1.Size = new System.Drawing.Size(433, 378);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin người dùng";
+            // 
+            // chkResetPassword
+            // 
+            this.chkResetPassword.Location = new System.Drawing.Point(150, 301);
+            this.chkResetPassword.Name = "chkResetPassword";
+            this.chkResetPassword.Properties.Caption = "Đổi lại mật khẩu";
+            this.chkResetPassword.Size = new System.Drawing.Size(123, 19);
+            this.chkResetPassword.TabIndex = 75;
+            this.chkResetPassword.CheckedChanged += new System.EventHandler(this.chkResetPassword_CheckedChanged);
             // 
             // cboPhanQuyen
             // 
@@ -307,15 +316,6 @@
             this.label1.TabIndex = 43;
             this.label1.Text = "Tên đăng nhập(*)";
             // 
-            // chkResetPassword
-            // 
-            this.chkResetPassword.Location = new System.Drawing.Point(150, 301);
-            this.chkResetPassword.Name = "chkResetPassword";
-            this.chkResetPassword.Properties.Caption = "Đổi lại mật khẩu";
-            this.chkResetPassword.Size = new System.Drawing.Size(123, 19);
-            this.chkResetPassword.TabIndex = 75;
-            this.chkResetPassword.CheckedChanged += new System.EventHandler(this.chkResetPassword_CheckedChanged);
-            // 
             // ucUserDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,6 +327,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkResetPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboPhanQuyen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
@@ -338,7 +339,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateNamSinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkResetPassword.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

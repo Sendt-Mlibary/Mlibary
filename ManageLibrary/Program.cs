@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ManageLibrary.Util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace ManageLibrary
         [STAThread]
         static void Main()
         {
+            string a = Common.md5("123456");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
