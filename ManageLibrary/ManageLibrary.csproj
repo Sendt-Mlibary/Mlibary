@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE8D4EBD-3CFC-4789-A5BE-FCBA1F25A8E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManageLibrary</RootNamespace>
+    <AssemblyName>ManageLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeRush.Common, Version=10.2.4.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DevExpress 10.2.4\DevExpress 10.2.4\DXPerience 10.2.4 Crack\DevExpress.CodeRush.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\NhanVienBLL.cs" />
+    <Compile Include="BLL\ThuThu.cs" />
+    <Compile Include="ConnectDB\DataProvider.cs" />
+    <Compile Include="DAL\Admin.cs" />
+    <Compile Include="DAL\NhanVienDAL.cs" />
+    <Compile Include="DAO\NhanVienDb.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUsers.Designer.cs">
+      <DependentUpon>ManagerUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerBooks.Designer.cs">
+      <DependentUpon>ManagerBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ucHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucHome.Designer.cs">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucManagerUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucManagerUsers.Designer.cs">
+      <DependentUpon>ucManagerUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucUserDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucUserDialog.Designer.cs">
+      <DependentUpon>ucUserDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FormDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\FormDialog.Designer.cs">
+      <DependentUpon>FormDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Common.cs" />
+    <Compile Include="Util\Constants.cs" />
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucHome.resx">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucManagerUsers.resx">
+      <DependentUpon>ucManagerUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucUserDialog.resx">
+      <DependentUpon>ucUserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FormDialog.resx">
+      <DependentUpon>FormDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUsers.resx">
+      <DependentUpon>ManagerUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerBooks.resx">
+      <DependentUpon>ManagerBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dialog\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\16x16\address.png" />
+    <Content Include="Resources\16x16\administrative-docs.png" />
+    <Content Include="Resources\16x16\advertising.png" />
+    <Content Include="Resources\16x16\archives.png" />
+    <Content Include="Resources\16x16\attibutes.png" />
+    <Content Include="Resources\16x16\bank.png" />
+    <Content Include="Resources\16x16\basket.png" />
+    <Content Include="Resources\16x16\bestseller.png" />
+    <Content Include="Resources\16x16\billing.png" />
+    <Content Include="Resources\16x16\bookmark.png" />
+    <Content Include="Resources\16x16\brainstorming.png" />
+    <Content Include="Resources\16x16\business-contact.png" />
+    <Content Include="Resources\16x16\busy.png" />
+    <Content Include="Resources\16x16\calendar.png" />
+    <Content Include="Resources\16x16\category.png" />
+    <Content Include="Resources\16x16\check.png" />
+    <Content Include="Resources\16x16\collaboration.png" />
+    <Content Include="Resources\16x16\comment.png" />
+    <Content Include="Resources\16x16\communication.png" />
+    <Content Include="Resources\16x16\config.png" />
+    <Content Include="Resources\16x16\consulting.png" />
+    <Content Include="Resources\16x16\contact.png" />
+    <Content Include="Resources\16x16\cost.png" />
+    <Content Include="Resources\16x16\credit-card.png" />
+    <Content Include="Resources\16x16\credit.png" />
+    <Content Include="Resources\16x16\current-work.png" />
+    <Content Include="Resources\16x16\customers.png" />
+    <Content Include="Resources\16x16\cv.png" />
+    <Content Include="Resources\16x16\database.png" />
+    <Content Include="Resources\16x16\date.png" />
+    <Content Include="Resources\16x16\delicious.png" />
+    <Content Include="Resources\16x16\document-library.png" />
+    <Content Include="Resources\16x16\donate.png" />
+    <Content Include="Resources\16x16\drawings.png" />
+    <Content Include="Resources\16x16\edit.png" />
+    <Content Include="Resources\16x16\email.png" />
+    <Content Include="Resources\16x16\featured.png" />
+    <Content Include="Resources\16x16\feed.png" />
+    <Content Include="Resources\16x16\finished-work.png" />
+    <Content Include="Resources\16x16\flag.png" />
+    <Content Include="Resources\16x16\folder.png" />
+    <Content Include="Resources\16x16\free-for-job.png" />
+    <Content Include="Resources\16x16\freelance.png" />
+    <Content Include="Resources\16x16\full-time.png" />
+    <Content Include="Resources\16x16\future-projects.png" />
+    <Content Include="Resources\16x16\graphic-design.png" />
+    <Content Include="Resources\16x16\heart.png" />
+    <Content Include="Resources\16x16\hire-me.png" />
+    <Content Include="Resources\16x16\home.png" />
+    <Content Include="Resources\16x16\illustration.png" />
+    <Content Include="Resources\16x16\invoice.png" />
+    <Content Include="Resources\16x16\issue.png" />
+    <Content Include="Resources\16x16\library.png" />
+    <Content Include="Resources\16x16\lightbulb.png" />
+    <Content Include="Resources\16x16\limited-edition.png" />
+    <Content Include="Resources\16x16\link.png" />
+    <Content Include="Resources\16x16\lock.png" />
+    <Content Include="Resources\16x16\login.png" />
+    <Content Include="Resources\16x16\logout.png" />
+    <Content Include="Resources\16x16\milestone.png" />
+    <Content Include="Resources\16x16\my-account.png" />
+    <Content Include="Resources\16x16\networking.png" />
+    <Content Include="Resources\16x16\old-versions.png" />
+    <Content Include="Resources\16x16\order-192.png" />
+    <Content Include="Resources\16x16\order.png" />
+    <Content Include="Resources\16x16\payment-card.png" />
+    <Content Include="Resources\16x16\paypal.png" />
+    <Content Include="Resources\16x16\pen.png" />
+    <Content Include="Resources\16x16\pencil.png" />
+    <Content Include="Resources\16x16\phone.png" />
+    <Content Include="Resources\16x16\photography.png" />
+    <Content Include="Resources\16x16\plus.png" />
+    <Content Include="Resources\16x16\premium.png" />
+    <Content Include="Resources\16x16\print.png" />
+    <Content Include="Resources\16x16\process.png" />
+    <Content Include="Resources\16x16\product-193.png" />
+    <Content Include="Resources\16x16\product-design.png" />
+    <Content Include="Resources\16x16\product.png" />
+    <Content Include="Resources\16x16\project.png" />
+    <Content Include="Resources\16x16\publish.png" />
+    <Content Include="Resources\16x16\refresh.png" />
+    <Content Include="Resources\16x16\save.png" />
+    <Content Include="Resources\16x16\search.png" />
+    <Content Include="Resources\16x16\settings.png" />
+    <Content Include="Resources\16x16\shipping.png" />
+    <Content Include="Resources\16x16\showreel.png" />
+    <Content Include="Resources\16x16\sign-in.png" />
+    <Content Include="Resources\16x16\sign-out.png" />
+    <Content Include="Resources\16x16\sign-up.png" />
+    <Content Include="Resources\16x16\sitemap.png" />
+    <Content Include="Resources\16x16\special-offer.png" />
+    <Content Include="Resources\16x16\star.png" />
+    <Content Include="Resources\16x16\statistics.png" />
+    <Content Include="Resources\16x16\suppliers.png" />
+    <Content Include="Resources\16x16\tag.png" />
+    <Content Include="Resources\16x16\ticket.png" />
+    <Content Include="Resources\16x16\twitter.png" />
+    <Content Include="Resources\16x16\upcoming-work.png" />
+    <Content Include="Resources\16x16\user.png" />
+    <Content Include="Resources\16x16\world.png" />
+    <Content Include="Resources\16x16\zoom.png" />
+    <Content Include="Resources\32x32\address.png" />
+    <Content Include="Resources\32x32\administrative-docs.png" />
+    <Content Include="Resources\32x32\advertising.png" />
+    <Content Include="Resources\32x32\archives.png" />
+    <Content Include="Resources\32x32\attibutes.png" />
+    <Content Include="Resources\32x32\bank.png" />
+    <Content Include="Resources\32x32\basket.png" />
+    <Content Include="Resources\32x32\bestseller.png" />
+    <Content Include="Resources\32x32\billing.png" />
+    <Content Include="Resources\32x32\bookmark.png" />
+    <Content Include="Resources\32x32\brainstorming.png" />
+    <Content Include="Resources\32x32\business-contact.png" />
+    <Content Include="Resources\32x32\busy.png" />
+    <Content Include="Resources\32x32\calendar.png" />
+    <Content Include="Resources\32x32\category.png" />
+    <Content Include="Resources\32x32\check.png" />
+    <Content Include="Resources\32x32\collaboration.png" />
+    <Content Include="Resources\32x32\comment.png" />
+    <Content Include="Resources\32x32\communication.png" />
+    <Content Include="Resources\32x32\config.png" />
+    <Content Include="Resources\32x32\consulting.png" />
+    <Content Include="Resources\32x32\contact.png" />
+    <Content Include="Resources\32x32\cost.png" />
+    <Content Include="Resources\32x32\credit-card.png" />
+    <Content Include="Resources\32x32\credit.png" />
+    <Content Include="Resources\32x32\current-work.png" />
+    <Content Include="Resources\32x32\customers.png" />
+    <Content Include="Resources\32x32\cv.png" />
+    <Content Include="Resources\32x32\database.png" />
+    <Content Include="Resources\32x32\date.png" />
+    <Content Include="Resources\32x32\delicious.png" />
+    <Content Include="Resources\32x32\document-library.png" />
+    <Content Include="Resources\32x32\donate.png" />
+    <Content Include="Resources\32x32\drawings.png" />
+    <Content Include="Resources\32x32\edit.png" />
+    <Content Include="Resources\32x32\email.png" />
+    <Content Include="Resources\32x32\featured.png" />
+    <Content Include="Resources\32x32\feed.png" />
+    <Content Include="Resources\32x32\finished-work.png" />
+    <Content Include="Resources\32x32\flag.png" />
+    <Content Include="Resources\32x32\folder.png" />
+    <Content Include="Resources\32x32\free-for-job.png" />
+    <Content Include="Resources\32x32\freelance.png" />
+    <Content Include="Resources\32x32\full-time.png" />
+    <Content Include="Resources\32x32\future-projects.png" />
+    <Content Include="Resources\32x32\graphic-design.png" />
+    <Content Include="Resources\32x32\heart.png" />
+    <Content Include="Resources\32x32\hire-me.png" />
+    <Content Include="Resources\32x32\home.png" />
+    <Content Include="Resources\32x32\illustration.png" />
+    <Content Include="Resources\32x32\invoice.png" />
+    <Content Include="Resources\32x32\issue.png" />
+    <Content Include="Resources\32x32\library.png" />
+    <Content Include="Resources\32x32\lightbulb.png" />
+    <Content Include="Resources\32x32\limited-edition.png" />
+    <Content Include="Resources\32x32\link.png" />
+    <Content Include="Resources\32x32\lock.png" />
+    <Content Include="Resources\32x32\login.png" />
+    <Content Include="Resources\32x32\logout.png" />
+    <Content Include="Resources\32x32\milestone.png" />
+    <Content Include="Resources\32x32\my-account.png" />
+    <Content Include="Resources\32x32\networking.png" />
+    <Content Include="Resources\32x32\old-versions.png" />
+    <Content Include="Resources\32x32\order-159.png" />
+    <Content Include="Resources\32x32\order.png" />
+    <Content Include="Resources\32x32\payment-card.png" />
+    <Content Include="Resources\32x32\paypal.png" />
+    <Content Include="Resources\32x32\pen.png" />
+    <Content Include="Resources\32x32\pencil.png" />
+    <Content Include="Resources\32x32\phone.png" />
+    <Content Include="Resources\32x32\photography.png" />
+    <Content Include="Resources\32x32\plus.png" />
+    <Content Include="Resources\32x32\premium.png" />
+    <Content Include="Resources\32x32\print.png" />
+    <Content Include="Resources\32x32\process.png" />
+    <Content Include="Resources\32x32\product-169.png" />
+    <Content Include="Resources\32x32\product-design.png" />
+    <Content Include="Resources\32x32\product.png" />
+    <Content Include="Resources\32x32\project.png" />
+    <Content Include="Resources\32x32\publish.png" />
+    <Content Include="Resources\32x32\refresh.png" />
+    <Content Include="Resources\32x32\search.png" />
+    <Content Include="Resources\32x32\settings.png" />
+    <Content Include="Resources\32x32\shipping.png" />
+    <Content Include="Resources\32x32\showreel.png" />
+    <Content Include="Resources\32x32\sign-in.png" />
+    <Content Include="Resources\32x32\sign-out.png" />
+    <Content Include="Resources\32x32\sign-up.png" />
+    <Content Include="Resources\32x32\sitemap.png" />
+    <Content Include="Resources\32x32\special-offer.png" />
+    <Content Include="Resources\32x32\star.png" />
+    <Content Include="Resources\32x32\statistics.png" />
+    <Content Include="Resources\32x32\suppliers.png" />
+    <Content Include="Resources\32x32\tag.png" />
+    <Content Include="Resources\32x32\ticket.png" />
+    <Content Include="Resources\32x32\twitter.png" />
+    <Content Include="Resources\32x32\upcoming-work.png" />
+    <Content Include="Resources\32x32\user.png" />
+    <Content Include="Resources\32x32\world.png" />
+    <Content Include="Resources\32x32\zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
