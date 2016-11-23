@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManageLibrary.Util
 {
-    class Constants
+    public static class Constants
     {
         public static class IsActive
         {

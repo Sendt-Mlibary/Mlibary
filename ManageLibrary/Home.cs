@@ -61,5 +61,10 @@ namespace ManageLibrary
         {
             loginDlg.Dispose();
         }
+
+        private void navBarItem5_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            addUsercontrol(new ucManagerDocuments(this));
+        }
     }
 }

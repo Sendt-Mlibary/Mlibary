@@ -72,6 +72,7 @@
     <Compile Include="DAL\NhanVienDAL.cs" />
     <Compile Include="DAL\TaiLieuDAL.cs" />
     <Compile Include="DAO\NhanVienDb.cs" />
+    <Compile Include="DAO\TaiLieuDb.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
