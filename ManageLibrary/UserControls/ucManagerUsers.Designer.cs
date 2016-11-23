@@ -220,10 +220,11 @@
             this.sctSearch.Size = new System.Drawing.Size(450, 20);
             this.sctSearch.TabIndex = 20;
             this.sctSearch.ToolTip = "Tìm kiếm theo Tên đăng nhập, Họ tên, Email";
-            this.sctSearch.TextChanged += new System.EventHandler(this.sctSearch_Enter);
+            this.sctSearch.TextChanged += new System.EventHandler(this.sctSearch_TextChanged);
             // 
             // bntDelete
             // 
+            this.bntDelete.Image = ((System.Drawing.Image)(resources.GetObject("bntDelete.Image")));
             this.bntDelete.ImageIndex = 12;
             this.bntDelete.ImageList = this.imgCol16x;
             this.bntDelete.Location = new System.Drawing.Point(290, 59);
@@ -340,6 +341,7 @@
             // 
             // bntEdit
             // 
+            this.bntEdit.Image = ((System.Drawing.Image)(resources.GetObject("bntEdit.Image")));
             this.bntEdit.ImageIndex = 34;
             this.bntEdit.ImageList = this.imgCol16x;
             this.bntEdit.Location = new System.Drawing.Point(205, 59);
@@ -351,9 +353,10 @@
             // 
             // bntNew
             // 
+            this.bntNew.Image = ((System.Drawing.Image)(resources.GetObject("bntNew.Image")));
             this.bntNew.ImageIndex = 69;
             this.bntNew.ImageList = this.imgCol16x;
-            this.bntNew.Location = new System.Drawing.Point(109, 58);
+            this.bntNew.Location = new System.Drawing.Point(109, 59);
             this.bntNew.Name = "bntNew";
             this.bntNew.Size = new System.Drawing.Size(90, 30);
             this.bntNew.TabIndex = 17;

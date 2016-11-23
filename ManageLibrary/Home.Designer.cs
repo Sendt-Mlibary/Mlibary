@@ -256,6 +256,7 @@
             toolTipTitleItem3.Text = "Quản lý tài liệu";
             superToolTip3.Items.Add(toolTipTitleItem3);
             this.navBarItem5.SuperTip = superToolTip3;
+            this.navBarItem5.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem5_LinkClicked);
             // 
             // navBarItem6
             // 

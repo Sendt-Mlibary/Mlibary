@@ -20,7 +20,6 @@ namespace ManageLibrary.Util
         {
             return BitConverter.ToString(encryptData(data)).Replace("-", "").ToLower();
         }
-
         public static string convertDateFormat(DateTime date, string formatDate)
         {
             try
@@ -37,5 +36,6 @@ namespace ManageLibrary.Util
         public static string convertParamLike(string param){
             return "%" + param + "%";
         }
+
     }
 }

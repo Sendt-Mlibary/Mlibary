@@ -67,11 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\NhanVienBLL.cs" />
-    <Compile Include="BLL\ThuThu.cs" />
+    <Compile Include="BLL\TaiLieuBLL.cs" />
     <Compile Include="ConnectDB\DataProvider.cs" />
-    <Compile Include="DAL\Admin.cs" />
     <Compile Include="DAL\NhanVienDAL.cs" />
+    <Compile Include="DAL\TaiLieuDAL.cs" />
     <Compile Include="DAO\NhanVienDb.cs" />
+    <Compile Include="DAO\TaiLieuDb.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,11 +99,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ucDocumentDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDocumentDialog.Designer.cs">
+      <DependentUpon>ucDocumentDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ucHome.Designer.cs">
       <DependentUpon>ucHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucManagerDocuments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucManagerDocuments.Designer.cs">
+      <DependentUpon>ucManagerDocuments.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ucManagerUsers.cs">
       <SubType>UserControl</SubType>
@@ -130,8 +143,14 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDocumentDialog.resx">
+      <DependentUpon>ucDocumentDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucHome.resx">
       <DependentUpon>ucHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucManagerDocuments.resx">
+      <DependentUpon>ucManagerDocuments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucManagerUsers.resx">
       <DependentUpon>ucManagerUsers.cs</DependentUpon>

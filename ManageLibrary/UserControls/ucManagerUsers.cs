@@ -118,8 +118,7 @@ namespace ManageLibrary.UserControls
                 form.Dispose();
             }
         }
-
-        private void sctSearch_Enter(object sender, EventArgs e)
+        private void sctSearch_TextChanged(object sender, EventArgs e)
         {
             DataTable dt = nvBll.TimKiem(sctSearch.Text);
             grwNhanVien.DataSource = dt;
