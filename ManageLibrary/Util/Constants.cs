@@ -8,10 +8,11 @@ namespace ManageLibrary.Util
 {
     public static class Constants
     {
-        public static class IsActive
-        {
-            public static string CREATE = "CREATE";
-            public static string UPDATE = "UPDATE"; 
-        }
+        // khong can dung nua, su dung id de phan biet create or update
+        //public static class IsActive
+        //{
+            //public static string CREATE = "CREATE";    
+            //public static string UPDATE = "UPDATE"; 
+        //}
     }
 }

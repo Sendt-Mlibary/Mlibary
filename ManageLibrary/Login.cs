@@ -39,7 +39,8 @@ namespace ManageLibrary
             {
                 return;
             }
-            if (nvBLL.DangNhap(NvDb))
+            NvDb = nvBLL.DangNhap(NvDb);
+            if (NvDb != null)
             {
                 homeDlg = new Home(this);
                 homeDlg.Show();
@@ -67,6 +68,15 @@ namespace ManageLibrary
                 return false;
             }
             return true;
+        }
+
+        public void Logout()
+        {
+            this.NvDb = new NhanVienDb();
+            this.nvBLL = new NhanVienBLL();
+            txtPassword.Text = "";
+            txtUsername.Text = "";
+            this.Show();
         }
     }
 }

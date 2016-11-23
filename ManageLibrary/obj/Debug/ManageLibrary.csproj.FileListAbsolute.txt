@@ -225,3 +225,26 @@ D:\Do an\ManageLibrary_bk\ManageLibrary\obj\Debug\ManageLibrary.ManagerBooks.res
 D:\Do an\ManageLibrary_bk\ManageLibrary\obj\Debug\ManageLibrary.Properties.Resources.resources
 D:\Do an\ManageLibrary_bk\ManageLibrary\obj\Debug\ManageLibrary.csproj.GenerateResource.Cache
 D:\Do an\ManageLibrary_bk\ManageLibrary\obj\Debug\ManageLibrary.exe.licenses
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.exe.config
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.exe
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.pdb
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.exe
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.pdb
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Common.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.Utils.v6.3.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.XtraLayout.v6.3.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.Data.v6.3.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Common.xml
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.csprojResolveAssemblyReference.cache
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Home.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Login.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDocumentDialog.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucHome.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerDocuments.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerUsers.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucUserDialog.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.FormDialog.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Properties.Resources.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.csproj.GenerateResource.Cache
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.exe.licenses

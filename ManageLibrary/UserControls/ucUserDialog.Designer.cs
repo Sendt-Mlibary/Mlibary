@@ -123,15 +123,14 @@
             // 
             // cboPhanQuyen
             // 
-            this.cboPhanQuyen.EditValue = "-- Lựa chọn --";
+            this.cboPhanQuyen.EditValue = "Nhân viên";
             this.cboPhanQuyen.Location = new System.Drawing.Point(150, 223);
             this.cboPhanQuyen.Name = "cboPhanQuyen";
             this.cboPhanQuyen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboPhanQuyen.Properties.Items.AddRange(new object[] {
-            "-- Lựa chọn --",
-            "Người quản lý",
-            "Nhân viên"});
+            "Nhân viên",
+            "Người quản lý"});
             this.cboPhanQuyen.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cboPhanQuyen.Size = new System.Drawing.Size(225, 20);
             this.cboPhanQuyen.TabIndex = 74;

@@ -26,9 +26,9 @@ namespace ManageLibrary.UserControls
             nvBll = new NhanVienBLL();
             this.ucManagerUsers = ucManagerUsers;
             this.isActive = ucManagerUsers.IsActive;
-            if (Constants.IsActive.UPDATE.Equals(isActive))
+            idUserSelect = ucManagerUsers.IdUserSelect;
+            if (idUserSelect > 0)                         // idUserSelect > 0 ==> cap nhat
             {
-                idUserSelect = ucManagerUsers.IdUserSelect;
                 setInfoDialog(idUserSelect);
                 enableControl(false);
                 chkResetPassword.Show();
@@ -44,7 +44,7 @@ namespace ManageLibrary.UserControls
         {
             // id user ton tai ==> update user
             // else => create user
-            if (Constants.IsActive.UPDATE.Equals(isActive))
+            if (idUserSelect > 0)                         // idUserSelect > 0 ==> cap nhat
             {
                 updateUser(idUserSelect);
             }
@@ -75,7 +75,7 @@ namespace ManageLibrary.UserControls
             List<NhanVienDb> dt = nvBll.GetAllNhanVienNotIdUpdate(nv.Id);
             for (int i = 0; i < dt.Count; i++)
             {
-                if (nv.TenDangNhap == (dt[i].TenDangNhap.ToUpper()).ToString())
+                if (nv.TenDangNhap == (dt[i].TenDangNhap.ToUpper()))
                 {
                     MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -83,13 +83,19 @@ namespace ManageLibrary.UserControls
             }
 
             nv.HoTen = txtHoTen.Text;
-            nv.MatKhau = Common.md5(txtMatKhau.Text);
-            nv.SoDienThoai = txtSoDienThoai.Text.ToString();
-            nv.QueQuan = txtQueQuan.Text.ToString();
-            nv.Email = txtEmail.Text.ToString();
-            nv.DiaChi = txtDiaChi.Text.ToString();
+            if (chkResetPassword.Checked == true)
+            {
+                nv.MatKhau = Common.md5(txtMatKhau.Text);       // Reset lai mat khau
+            }
+            else {
+                nv.MatKhau = "";//Khong reset lai mat khau
+            }
+            nv.SoDienThoai = txtSoDienThoai.Text;
+            nv.QueQuan = txtQueQuan.Text;
+            nv.Email = txtEmail.Text;
+            nv.DiaChi = txtDiaChi.Text;
             nv.NamSinh = DateTime.Parse(dateNamSinh.Text).Date;
-            nv.PhanQuyen = cboPhanQuyen.SelectedIndex;
+            nv.PhanQuyen = cboPhanQuyen.SelectedIndex;   //selectbox co 2 item:1: Người quản lý, 0: Nhân viên
             if (nvBll.SuaNhanVien(nv))
             {
                 MessageBox.Show("Đã cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -99,7 +105,7 @@ namespace ManageLibrary.UserControls
             }
             else
             {
-                MessageBox.Show("Bạn đã nhập sai thông tin nhân viên cần sửa, yêu cầu nhập lại!", "Thông báo!!!");
+                MessageBox.Show("Bạn đã nhập sai thông tin nhân viên cần sửa, yêu cầu nhập lại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void createUser()
@@ -110,7 +116,7 @@ namespace ManageLibrary.UserControls
                 return;
             }
             nv = new NhanVienDb();
-            nv.HoTen = txtHoTen.Text.ToString();
+            nv.HoTen = txtHoTen.Text;
             nv.TenDangNhap = txtTenDangNhap.Text.ToUpper();
             DataTable dt = nvBll.GetAllNhanVien();
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -121,13 +127,13 @@ namespace ManageLibrary.UserControls
                     return;
                 }
             }
-            nv.MatKhau = Common.md5(txtMatKhau.Text.ToString());
-            nv.SoDienThoai = txtSoDienThoai.Text.ToString();
-            nv.QueQuan = txtQueQuan.Text.ToString();
-            nv.Email = txtEmail.Text.ToString();
-            nv.DiaChi = txtDiaChi.Text.ToString();
+            nv.MatKhau = Common.md5(txtMatKhau.Text);
+            nv.SoDienThoai = txtSoDienThoai.Text;
+            nv.QueQuan = txtQueQuan.Text;
+            nv.Email = txtEmail.Text;
+            nv.DiaChi = txtDiaChi.Text;
             nv.NamSinh = DateTime.Parse(dateNamSinh.Text).Date;
-            nv.PhanQuyen = cboPhanQuyen.SelectedIndex;
+            nv.PhanQuyen = cboPhanQuyen.SelectedIndex;   //selectbox co 2 item:1: Người quản lý, 0: Nhân viên
             if (nvBll.ThemNhanVien(nv))
             {
                 MessageBox.Show("Đã thêm mới thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -137,6 +143,7 @@ namespace ManageLibrary.UserControls
             }
             else
             {
+                MessageBox.Show("Có lỗi xảy ra trong quá trình thêm mới", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }
@@ -162,7 +169,8 @@ namespace ManageLibrary.UserControls
                 MessageBox.Show("Bạn phải nhập Email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            if (Constants.IsActive.CREATE.Equals(isActive) || chkResetPassword.Checked == true)
+            if (chkResetPassword.Checked == true
+                || idUserSelect <= 0)
             {
                 if (String.IsNullOrWhiteSpace(txtMatKhau.Text))
                 {
@@ -179,11 +187,11 @@ namespace ManageLibrary.UserControls
                     return false;
                 }
             }
-            if (cboPhanQuyen.SelectedIndex < 1)
-            {
-                MessageBox.Show("Phải phân quyền cho người dùng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
+            //if (cboPhanQuyen.SelectedIndex < 1)
+            //{
+            //    MessageBox.Show("Phải phân quyền cho người dùng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return false;
+            //}
             return true;
         }
 
@@ -197,14 +205,14 @@ namespace ManageLibrary.UserControls
             }
             //set info user in dialog
             txtTenDangNhap.Text = nv.TenDangNhap;
-            dateNamSinh.EditValue = nv.NamSinh;
+            dateNamSinh.Text = nv.NamSinh != null ? nv.NamSinh.Day + "/" + nv.NamSinh.Month + "/" + nv.NamSinh.Year : "";
             txtDiaChi.Text = nv.DiaChi;
             txtQueQuan.Text = nv.QueQuan;
             txtSoDienThoai.Text = nv.SoDienThoai;
             txtEmail.Text = nv.Email;
             txtMatKhau.Text = nv.MatKhau;
             txtHoTen.Text = nv.HoTen;
-            cboPhanQuyen.SelectedIndex = nv.PhanQuyen == 1 || nv.PhanQuyen == 2 ? nv.PhanQuyen : 0;
+            cboPhanQuyen.SelectedIndex = nv.PhanQuyen;
         }
 
         private void setEmptyData()
@@ -228,7 +236,8 @@ namespace ManageLibrary.UserControls
 
         private void bntReset_Click(object sender, EventArgs e)
         {
-            if (Constants.IsActive.UPDATE.Equals(isActive))
+
+            if (idUserSelect > 0)// idUserSelect>0 ==> cap nhat
             {
                 setInfoDialog(idUserSelect);
             }
@@ -244,7 +253,8 @@ namespace ManageLibrary.UserControls
             {
                 enableControl(true);
             }
-            else {
+            else
+            {
                 enableControl(false);
             }
         }

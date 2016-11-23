@@ -15,6 +15,7 @@ namespace ManageLibrary
     public partial class Home : Form
     {
         private NhanVienDb nvDb;
+        private NhanVienDb loginUser;
         private Login loginDlg;
         public NhanVienDb NvDb
         {
@@ -30,6 +31,8 @@ namespace ManageLibrary
                 InitializeComponent();
                 this.nvDb = loginDlg.NvDb;
                 this.loginDlg = loginDlg;
+                this.loginUser = loginDlg.NvDb;
+                this.navBarGroup2.Caption = "Home - " + loginDlg.NvDb.HoTen + " (" + loginDlg.NvDb.PhanQuyenStr + ")";
                 addUsercontrol(new ucHome());
             }
         }
@@ -42,7 +45,8 @@ namespace ManageLibrary
                 pnlUsercontrol.Controls.Add(uc);
                 uc.Dock = DockStyle.Fill;
             }
-            catch (Exception e) { 
+            catch (Exception e)
+            {
                 throw e;
             }
         }
@@ -54,7 +58,7 @@ namespace ManageLibrary
 
         private void Home_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Home_FormClosed(object sender, FormClosedEventArgs e)
@@ -65,6 +69,12 @@ namespace ManageLibrary
         private void navBarItem5_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             addUsercontrol(new ucManagerDocuments(this));
+        }
+
+        private void navBarItem7_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            this.Dispose();
+            loginDlg.Logout();
         }
     }
 }

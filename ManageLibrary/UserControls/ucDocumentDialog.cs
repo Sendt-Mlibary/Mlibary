@@ -15,67 +15,114 @@ namespace ManageLibrary.UserControls
 {
     public partial class ucDocumentDialog : UserControl
     {
-        public ucDocumentDialog()
-        {
-            InitializeComponent();
-        }
-
         private TaiLieuDb tl;
         private TaiLieuBLL tlBll;
         private ucManagerDocuments ucManagerDocuments;
         private int idDocumentSelect;
-        private string isActive;
         public ucDocumentDialog(ucManagerDocuments ucManagerDocuments)
         {
             InitializeComponent();
             tlBll = new TaiLieuBLL();
             this.ucManagerDocuments = ucManagerDocuments;
-            this.isActive = ucManagerDocuments.IsActive;
-            if (Constants.IsActive.UPDATE.Equals(isActive))
+            idDocumentSelect = ucManagerDocuments.IdDocumentSelect;
+            if (idDocumentSelect > 0)     // Id ban ghi cap nhat > 0 ==> Cap nhat
             {
-                idDocumentSelect = ucManagerDocuments.IdDocumentSelect;
                 setInfoDialog(idDocumentSelect);
             }
             else
             {
-
+                setResetData();
             }
         }
 
-        private void setInfoDialog(int idUser)
+        private void setInfoDialog(int idDocumentSelect)
         {
-            tl = tlBll.getTaiLieuById(idUser);
+            tl = tlBll.getTaiLieuById(idDocumentSelect);
             if (tl == null)
             {
                 MessageBox.Show("Không tồn tại dữ liệu tài liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            //set info user in dialog
+            //set info document in dialog
             txtTenSach.Text = tl.TenSach;
             txtTacGia.Text = tl.TacGia;
             txtNamXuatBan.Text = tl.NamXuatBan;
             txtGia.Text = Convert.ToString(tl.Gia);
-            cboTheLoai.EditValue = tl.ID_TheLoaiSach;
-            cboNganhHoc.EditValue = tl.ID_NgonNguSach;
-            cboNgonNguSach.EditValue = tl.ID_NgonNguSach;
+            cboTheLoai.SelectedIndex = tl.ID_TheLoaiSach;
+            cboNganhHoc.SelectedIndex = tl.ID_NganhHoc;
+            cboNgonNguSach.SelectedIndex = tl.ID_NgonNguSach;
             txtTaiBan.Text = Convert.ToString(tl.TaiBan);
-            txtSoLuong.Text = Convert.ToString(tl.TaiBan);
+            txtSoLuong.Text = Convert.ToString(tl.SoLuong);
             txtSoNgayMuon.Text = Convert.ToString(tl.SoNgayMuon);
-            cboTrangThai.EditValue = tl.TrangThai;
+            cboTrangThai.SelectedIndex = tl.TrangThai == true ? 0 : 1;// 0: Được cho mượn, 1: không được cho mượn
         }
 
-        private void btnSave_Click_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-            // id user ton tai ==> update user
-            // else => create user
-            if (Constants.IsActive.UPDATE.Equals(isActive))
+            // id document ton tai ==> update document
+            // else => create update document
+            if (idDocumentSelect > 0)          // Id ban ghi cap nhat > 0 ==> Cap nhat
             {
-                //updateUser(idUserSelect);
+                updateDocument(idDocumentSelect);
             }
             else
             {
-                createUser();
+                createDocument();
             }
+        }
+
+        private void updateDocument(int idDocumentSelect)
+        {
+            // validate
+            if (!validateDocument())
+            {
+                return;
+            }
+            // Kiem tra lai nhan vien co ton tai khong?
+            tl = tlBll.getTaiLieuById(idDocumentSelect);
+            if (tl == null)
+            {
+                MessageBox.Show("Không tồn tại dữ liệu tài liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            tl.TenSach = txtTenSach.Text;
+            tl.TacGia = txtTacGia.Text;
+            tl.NamXuatBan = txtNamXuatBan.Text;
+            tl.Gia = (float)Convert.ToDouble(txtGia.Text);
+            tl.ID_TheLoaiSach = Convert.ToInt16(cboTheLoai.SelectedIndex);
+            tl.ID_NganhHoc = Convert.ToInt16(cboNganhHoc.SelectedIndex);
+            tl.ID_NgonNguSach = Convert.ToInt16(cboNgonNguSach.SelectedIndex);
+            tl.TaiBan = Convert.ToInt16(txtTaiBan.Text);
+            tl.SoLuong = Convert.ToInt16(txtSoLuong.Text);
+            tl.SoNgayMuon = Convert.ToInt16(txtSoNgayMuon.Text);
+            tl.TrangThai = cboTrangThai.SelectedIndex == 0 ? true : false;       //select index =="Được cho mượn" là true, còn ngược lại
+
+            if (tlBll.SuaTaiLieu(tl))
+            {
+                MessageBox.Show("Đã cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ucManagerDocuments.LoadGridView();
+                ucManagerDocuments.DisposeDialog();
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Bạn đã nhập sai thông tin tài liệu cần sửa, yêu cầu nhập lại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void setResetData()
+        {
+            txtTenSach.Text ="";
+            txtTacGia.Text  = "";
+            txtNamXuatBan.Text = "";
+            txtGia.Text = "";
+            cboTheLoai.SelectedIndex = 0;
+            cboNganhHoc.SelectedIndex = 0;
+            cboNgonNguSach.SelectedIndex = 0;
+            txtTaiBan.Text = "";
+            txtSoLuong.Text = "";
+            txtSoNgayMuon.Text = "180";
+            cboTrangThai.SelectedIndex = 0;//0: Được cho mượn
         }
 
         public bool validateDocument()
@@ -83,7 +130,7 @@ namespace ManageLibrary.UserControls
             return true;
         }
 
-        private void createUser()
+        private void createDocument()
         {
             // validate
             if (!validateDocument())
@@ -91,17 +138,17 @@ namespace ManageLibrary.UserControls
                 return;
             }
             tl = new TaiLieuDb();
-            tl.TenSach = txtTenSach.ToString();
+            tl.TenSach = txtTenSach.Text;
             tl.TacGia = txtTacGia.Text;
             tl.NamXuatBan = txtNamXuatBan.Text;
-            tl.Gia =(float) Convert.ToDouble(txtGia.Text);
+            tl.Gia = (float)Convert.ToDouble(txtGia.Text);
             tl.ID_TheLoaiSach = Convert.ToInt16(cboTheLoai.EditValue);
             tl.ID_NganhHoc = Convert.ToInt16(cboNganhHoc.EditValue);
             tl.ID_NgonNguSach = Convert.ToInt16(cboNgonNguSach.EditValue);
             tl.TaiBan = Convert.ToInt16(txtTaiBan.Text);
             tl.SoLuong = Convert.ToInt16(txtSoLuong.Text);
             tl.SoNgayMuon = Convert.ToInt16(txtSoNgayMuon.Text);
-            tl.TrangThai = Convert.ToInt16(cboTrangThai.EditValue) == 1? true :false;
+            tl.TrangThai = cboTrangThai.SelectedIndex == 0 ? true : false;       //select index =="Được cho mượn" là true, còn ngược lại
 
             if (tlBll.ThemTaiLieu(tl))
             {
@@ -112,7 +159,20 @@ namespace ManageLibrary.UserControls
             }
             else
             {
+                MessageBox.Show("Có lỗi xảy ra trong quá trình thêm mới", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+            }
+        }
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            if (idDocumentSelect > 0)     // Id ban ghi cap nhat > 0 ==> Cap nhat
+            {
+                setInfoDialog(idDocumentSelect);
+            }
+            else
+            {
+                setResetData();
             }
         }
     }

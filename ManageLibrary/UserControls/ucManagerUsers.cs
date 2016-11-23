@@ -54,7 +54,7 @@ namespace ManageLibrary.UserControls
 
         private void bntNew_Click(object sender, EventArgs e)
         {
-            IsActive = Constants.IsActive.CREATE;
+            idUserSelect = 0;
             ucUserDialog uc = new ucUserDialog(this);
             form = new FormDialog(uc);
             form.Show();
@@ -63,7 +63,6 @@ namespace ManageLibrary.UserControls
         {
             if (gridViewNhanVien.SelectedRowsCount > 0 && idUserSelect > 0)
             {
-                IsActive = Constants.IsActive.UPDATE;
                 ucUserDialog uc = new ucUserDialog(this);
                 form = new FormDialog(uc);
                 form.Show();

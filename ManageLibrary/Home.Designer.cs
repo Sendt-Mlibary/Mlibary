@@ -32,18 +32,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.imgCol16x = new DevExpress.Utils.ImageCollection(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -58,6 +60,7 @@
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
             this.pnlUsercontrol = new DevExpress.XtraEditors.PanelControl();
+            this.navBarItem7 = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.imgCol16x)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -207,7 +210,8 @@
             this.navBarItem3,
             this.navBarItem4,
             this.navBarItem5,
-            this.navBarItem6});
+            this.navBarItem6,
+            this.navBarItem7});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 241;
@@ -220,7 +224,10 @@
             this.navBarGroup2.Caption = "Home";
             this.navBarGroup2.Expanded = true;
             this.navBarGroup2.ImageUri.Uri = "Home";
+            this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem7)});
             this.navBarGroup2.Name = "navBarGroup2";
+            this.navBarGroup2.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup2.SmallImage")));
             toolTipTitleItem1.Text = "Home";
             superToolTip1.Items.Add(toolTipTitleItem1);
             this.navBarGroup2.SuperTip = superToolTip1;
@@ -234,7 +241,12 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem4),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem5),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem6)});
+            this.navBarGroup3.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup3.LargeImage")));
             this.navBarGroup3.Name = "navBarGroup3";
+            this.navBarGroup3.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup3.SmallImage")));
+            toolTipTitleItem5.Text = "Quản lý";
+            superToolTip5.Items.Add(toolTipTitleItem5);
+            this.navBarGroup3.SuperTip = superToolTip5;
             // 
             // navBarItem4
             // 
@@ -283,25 +295,25 @@
             // 
             this.navBarItem1.Caption = "Danh mục ngành học";
             this.navBarItem1.Name = "navBarItem1";
-            toolTipTitleItem5.Text = "Danh mục ngành học";
-            superToolTip5.Items.Add(toolTipTitleItem5);
-            this.navBarItem1.SuperTip = superToolTip5;
+            toolTipTitleItem6.Text = "Danh mục ngành học";
+            superToolTip6.Items.Add(toolTipTitleItem6);
+            this.navBarItem1.SuperTip = superToolTip6;
             // 
             // navBarItem2
             // 
             this.navBarItem2.Caption = "Danh mục ngôn ngữ sách";
             this.navBarItem2.Name = "navBarItem2";
-            toolTipTitleItem6.Text = "Danh mục ngôn ngữ sách";
-            superToolTip6.Items.Add(toolTipTitleItem6);
-            this.navBarItem2.SuperTip = superToolTip6;
+            toolTipTitleItem7.Text = "Danh mục ngôn ngữ sách";
+            superToolTip7.Items.Add(toolTipTitleItem7);
+            this.navBarItem2.SuperTip = superToolTip7;
             // 
             // navBarItem3
             // 
             this.navBarItem3.Caption = "Danh mục thể loại sách";
             this.navBarItem3.Name = "navBarItem3";
-            toolTipTitleItem7.Text = "Danh mục thể loại sách";
-            superToolTip7.Items.Add(toolTipTitleItem7);
-            this.navBarItem3.SuperTip = superToolTip7;
+            toolTipTitleItem8.Text = "Danh mục thể loại sách";
+            superToolTip8.Items.Add(toolTipTitleItem8);
+            this.navBarItem3.SuperTip = superToolTip8;
             // 
             // pnlUsercontrol
             // 
@@ -311,6 +323,13 @@
             this.pnlUsercontrol.Size = new System.Drawing.Size(795, 544);
             this.pnlUsercontrol.TabIndex = 0;
             // 
+            // navBarItem7
+            // 
+            this.navBarItem7.Caption = "Thoát tài khoản";
+            this.navBarItem7.Name = "navBarItem7";
+            this.navBarItem7.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem7.SmallImage")));
+            this.navBarItem7.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem7_LinkClicked);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,6 +338,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "Home";
             this.Text = "Home";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Home_FormClosed);
             this.Load += new System.EventHandler(this.Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgCol16x)).EndInit();
@@ -348,6 +368,7 @@
         private DevExpress.XtraNavBar.NavBarItem navBarItem2;
         private DevExpress.XtraNavBar.NavBarItem navBarItem3;
         private DevExpress.XtraEditors.PanelControl pnlUsercontrol;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem7;
 
     }
 }

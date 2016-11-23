@@ -24,7 +24,7 @@ namespace ManageLibrary.Util
         {
             try
             {
-                 
+                return date.Year+"-"+date.Month+"-"+date.Day;
             }
             catch (Exception e)
             {

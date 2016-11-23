@@ -46,7 +46,6 @@
             this.ClientSize = new System.Drawing.Size(387, 390);
             this.Controls.Add(this.pnlUsercontrol);
             this.Name = "FormDialog";
-            this.Text = "FormDialog";
             this.Load += new System.EventHandler(this.FormDialog_Load);
             this.ResumeLayout(false);
 
