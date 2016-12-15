@@ -15,45 +15,44 @@ namespace ManageLibrary
 {
     public partial class Login : Form
     {
-        private NhanVienDb nvDb;
+        private NhanVienDb loginUser;
         private NhanVienBLL nvBLL;
         private Home homeDlg;
-        public NhanVienDb NvDb
+        public NhanVienDb LoginUser
         {
-            get { return nvDb; }
-            set { nvDb = value; }
+            get { return loginUser; }
+            set { loginUser = value; }
         }
 
-        public Login()
+        public Login(Home homeDlg)
         {
             InitializeComponent();
             nvBLL = new NhanVienBLL();
-            nvDb = new NhanVienDb();
+            loginUser = new NhanVienDb();
+            this.homeDlg = homeDlg;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            NvDb.TenDangNhap = txtUsername.Text.ToUpper();
-            NvDb.MatKhau = txtPassword.Text;
-            if (!validateLogin(NvDb))
+            LoginUser.TenDangNhap = txtUsername.Text.ToUpper();
+            LoginUser.MatKhau = txtPassword.Text;
+            if (validateLogin(LoginUser))
             {
-                return;
-            }
-            NvDb = nvBLL.DangNhap(NvDb);
-            if (NvDb != null)
-            {
-                homeDlg = new Home(this);
-                homeDlg.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Bạn đã nhập sai thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                LoginUser = nvBLL.DangNhap(LoginUser);
+                if (LoginUser != null)
+                {
+                    homeDlg.setData(LoginUser);
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Bạn đã nhập sai thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Environment.Exit(0);
         }
         private bool validateLogin(NhanVienDb nv)
         {
@@ -72,7 +71,7 @@ namespace ManageLibrary
 
         public void Logout()
         {
-            this.NvDb = new NhanVienDb();
+            this.loginUser = new NhanVienDb();
             this.nvBLL = new NhanVienBLL();
             txtPassword.Text = "";
             txtUsername.Text = "";

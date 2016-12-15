@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ManageLibrary.UserControls;
+using System.Web.UI;
+using System.Windows.Forms;
 
 namespace ManageLibrary.Util
 {
@@ -34,8 +37,45 @@ namespace ManageLibrary.Util
         }
 
         public static string convertParamLike(string param){
-            return "%" + param + "%";
+            if (String.IsNullOrWhiteSpace(param))
+            {
+                return "%%";
+            }
+            else
+            {
+                return "%" + param + "%";
+            }
+        }
+        public static DateTime addDay(int day)
+        {
+            DateTime today = DateTime.Now;
+            DateTime answer = today.AddDays(day);
+            return answer;
         }
 
+        public static void hidenParentForm(System.Windows.Forms.UserControl uc)
+        {
+            Form parentForm = (uc.ParentForm as Form);
+            if (parentForm != null) { 
+                parentForm.Hide(); // formDialog cha di
+            }
+        }
+
+        public static void showParentForm(System.Windows.Forms.UserControl uc)
+        {
+            Form parentForm = (uc.ParentForm as Form);
+            if (parentForm != null)
+            {
+                parentForm.Show(); //show formDialog cha hien thi len
+            }
+        }
+
+        public static void disposeParentForm(System.Windows.Forms.UserControl uc)
+        {
+            Form parentForm = (uc.ParentForm as Form);
+            if (parentForm != null) { 
+                parentForm.Dispose(); // giai phong formDialog
+            }
+        }
     }
 }

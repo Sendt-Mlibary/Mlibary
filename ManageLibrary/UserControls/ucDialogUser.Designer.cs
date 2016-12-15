@@ -1,6 +1,6 @@
 ﻿namespace ManageLibrary.UserControls
 {
-    partial class ucUserDialog
+    partial class ucDialogUser
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucUserDialog));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDialogUser));
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.chkResetPassword = new DevExpress.XtraEditors.CheckEdit();
@@ -54,6 +54,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -82,6 +83,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.simpleButton1);
             this.groupControl1.Controls.Add(this.chkResetPassword);
             this.groupControl1.Controls.Add(this.cboPhanQuyen);
             this.groupControl1.Controls.Add(this.txtMatKhau2);
@@ -162,6 +164,12 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(150, 171);
             this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Properties.Mask.EditMask = "([\\w-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([\\w-]+\\.)+))([a-zA-Z]{2,4}" +
+    "|[0-9]{1,3})(\\]?)";
+            this.txtEmail.Properties.Mask.IgnoreMaskBlank = false;
+            this.txtEmail.Properties.Mask.SaveLiteral = false;
+            this.txtEmail.Properties.NullValuePrompt = "example@tlu.vn";
+            this.txtEmail.Properties.ValidateOnEnterKey = true;
             this.txtEmail.Size = new System.Drawing.Size(225, 20);
             this.txtEmail.TabIndex = 70;
             // 
@@ -176,6 +184,8 @@
             // 
             this.txtSoDienThoai.Location = new System.Drawing.Point(151, 119);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
+            this.txtSoDienThoai.Properties.Mask.EditMask = "\\d{9,15}";
+            this.txtSoDienThoai.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtSoDienThoai.Size = new System.Drawing.Size(225, 20);
             this.txtSoDienThoai.TabIndex = 68;
             // 
@@ -208,9 +218,9 @@
             // bntReset
             // 
             this.bntReset.Image = ((System.Drawing.Image)(resources.GetObject("bntReset.Image")));
-            this.bntReset.Location = new System.Drawing.Point(255, 325);
+            this.bntReset.Location = new System.Drawing.Point(225, 325);
             this.bntReset.Name = "bntReset";
-            this.bntReset.Size = new System.Drawing.Size(71, 38);
+            this.bntReset.Size = new System.Drawing.Size(66, 38);
             this.bntReset.TabIndex = 64;
             this.bntReset.Text = "Làm lại";
             this.bntReset.Click += new System.EventHandler(this.bntReset_Click);
@@ -220,7 +230,7 @@
             this.bntSave.Image = ((System.Drawing.Image)(resources.GetObject("bntSave.Image")));
             this.bntSave.Location = new System.Drawing.Point(150, 326);
             this.bntSave.Name = "bntSave";
-            this.bntSave.Size = new System.Drawing.Size(99, 37);
+            this.bntSave.Size = new System.Drawing.Size(69, 37);
             this.bntSave.TabIndex = 63;
             this.bntSave.Text = "Lưu lại";
             this.bntSave.Click += new System.EventHandler(this.bntSave_Click);
@@ -315,12 +325,22 @@
             this.label1.TabIndex = 43;
             this.label1.Text = "Tên đăng nhập(*)";
             // 
-            // ucUserDialog
+            // simpleButton1
+            // 
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(297, 325);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(59, 38);
+            this.simpleButton1.TabIndex = 76;
+            this.simpleButton1.Text = "Thoát";
+            this.simpleButton1.Click += new System.EventHandler(this.bntExit_Click);
+            // 
+            // ucDialogUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Name = "ucUserDialog";
+            this.Name = "ucDialogUser";
             this.Size = new System.Drawing.Size(433, 378);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
@@ -369,5 +389,6 @@
         private DevExpress.XtraEditors.TextEdit txtDiaChi;
         private DevExpress.XtraEditors.TextEdit txtSoDienThoai;
         private DevExpress.XtraEditors.CheckEdit chkResetPassword;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

@@ -1,25 +1,25 @@
-﻿using System;
+﻿using ManageLibrary.BLL;
+using ManageLibrary.DAO;
+using ManageLibrary.Util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ManageLibrary.DAO;
-using ManageLibrary.BLL;
-using ManageLibrary.Util;
 
 namespace ManageLibrary.UserControls
 {
-    public partial class ucDocumentDialog : UserControl
+    public partial class ucDialogDocument : UserControl
     {
         private TaiLieuDb tl;
         private TaiLieuBLL tlBll;
         private ucManagerDocuments ucManagerDocuments;
         private int idDocumentSelect;
-        public ucDocumentDialog(ucManagerDocuments ucManagerDocuments)
+        public ucDialogDocument(ucManagerDocuments ucManagerDocuments)
         {
             InitializeComponent();
             tlBll = new TaiLieuBLL();
@@ -89,12 +89,12 @@ namespace ManageLibrary.UserControls
             tl.TacGia = txtTacGia.Text;
             tl.NamXuatBan = txtNamXuatBan.Text;
             tl.Gia = (float)Convert.ToDouble(txtGia.Text);
-            tl.ID_TheLoaiSach = Convert.ToInt16(cboTheLoai.SelectedIndex);
-            tl.ID_NganhHoc = Convert.ToInt16(cboNganhHoc.SelectedIndex);
-            tl.ID_NgonNguSach = Convert.ToInt16(cboNgonNguSach.SelectedIndex);
-            tl.TaiBan = Convert.ToInt16(txtTaiBan.Text);
-            tl.SoLuong = Convert.ToInt16(txtSoLuong.Text);
-            tl.SoNgayMuon = Convert.ToInt16(txtSoNgayMuon.Text);
+            tl.ID_TheLoaiSach = Convert.ToInt32(cboTheLoai.SelectedIndex);
+            tl.ID_NganhHoc = Convert.ToInt32(cboNganhHoc.SelectedIndex);
+            tl.ID_NgonNguSach = Convert.ToInt32(cboNgonNguSach.SelectedIndex);
+            tl.TaiBan = Convert.ToInt32(txtTaiBan.Text);
+            tl.SoLuong = Convert.ToInt32(txtSoLuong.Text);
+            tl.SoNgayMuon = Convert.ToInt32(txtSoNgayMuon.Text);
             tl.TrangThai = cboTrangThai.SelectedIndex == 0 ? true : false;       //select index =="Được cho mượn" là true, còn ngược lại
 
             if (tlBll.SuaTaiLieu(tl))
@@ -127,6 +127,36 @@ namespace ManageLibrary.UserControls
 
         public bool validateDocument()
         {
+            if (String.IsNullOrWhiteSpace(txtTenSach.Text))
+            {
+                MessageBox.Show("Bạn phải nhập Tên sách", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtTenSach.Focus();
+                return false;
+            }
+            if (cboTheLoai.SelectedIndex <= 0)
+            {
+                MessageBox.Show("Bạn phải nhập Thể loại sách", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboTheLoai.Focus();
+                return false;
+            }
+            if (cboNgonNguSach.SelectedIndex <= 0)
+            {
+                MessageBox.Show("Bạn phải nhập Ngôn ngữ sách", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboNgonNguSach.Focus();
+                return false;
+            }
+            if (cboNganhHoc.SelectedIndex <= 0)
+            {
+                MessageBox.Show("Bạn phải chọn Ngành học", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboNganhHoc.Focus();
+                return false;
+            }
+            if (String.IsNullOrWhiteSpace(txtSoLuong.Text))
+            {
+                MessageBox.Show("Bạn phải nhập Số lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSoLuong.Focus();
+                return false;
+            }
             return true;
         }
 
@@ -141,13 +171,15 @@ namespace ManageLibrary.UserControls
             tl.TenSach = txtTenSach.Text;
             tl.TacGia = txtTacGia.Text;
             tl.NamXuatBan = txtNamXuatBan.Text;
-            tl.Gia = (float)Convert.ToDouble(txtGia.Text);
-            tl.ID_TheLoaiSach = Convert.ToInt16(cboTheLoai.EditValue);
-            tl.ID_NganhHoc = Convert.ToInt16(cboNganhHoc.EditValue);
-            tl.ID_NgonNguSach = Convert.ToInt16(cboNgonNguSach.EditValue);
-            tl.TaiBan = Convert.ToInt16(txtTaiBan.Text);
-            tl.SoLuong = Convert.ToInt16(txtSoLuong.Text);
-            tl.SoNgayMuon = Convert.ToInt16(txtSoNgayMuon.Text);
+            if(!String.IsNullOrWhiteSpace(txtGia.Text)) {
+                tl.Gia = (float)Convert.ToDouble(txtGia.Text.Trim());
+            }
+            tl.ID_TheLoaiSach = cboTheLoai.SelectedIndex;
+            tl.ID_NganhHoc = cboNganhHoc.SelectedIndex;
+            tl.ID_NgonNguSach = cboNgonNguSach.SelectedIndex;
+            tl.TaiBan = Convert.ToInt32(txtTaiBan.Text);
+            tl.SoLuong = Convert.ToInt32(txtSoLuong.Text);
+            tl.SoNgayMuon = Convert.ToInt32(txtSoNgayMuon.Text);
             tl.TrangThai = cboTrangThai.SelectedIndex == 0 ? true : false;       //select index =="Được cho mượn" là true, còn ngược lại
 
             if (tlBll.ThemTaiLieu(tl))
@@ -174,6 +206,12 @@ namespace ManageLibrary.UserControls
             {
                 setResetData();
             }
+        }
+
+        private void bntExit_Click(object sender, EventArgs e)
+        {
+            Common.showParentForm(this.ucManagerDocuments);
+            Common.disposeParentForm(this);
         }
     }
 }

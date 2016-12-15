@@ -13,19 +13,19 @@ using ManageLibrary.Util;
 
 namespace ManageLibrary.UserControls
 {
-    public partial class ucUserDialog : UserControl
+    public partial class ucDialogUser : UserControl
     {
         private NhanVienDb nv;
         private NhanVienBLL nvBll;
         private ucManagerUsers ucManagerUsers;
         private int idUserSelect;
         private string isActive;
-        public ucUserDialog(ucManagerUsers ucManagerUsers)
+        public ucDialogUser(ucManagerUsers ucManagerUsers)
         {
             InitializeComponent();
             nvBll = new NhanVienBLL();
             this.ucManagerUsers = ucManagerUsers;
-            this.isActive = ucManagerUsers.IsActive;
+           // this.isActive = ucManagerUsers.IsActive;
             idUserSelect = ucManagerUsers.IdUserSelect;
             if (idUserSelect > 0)                         // idUserSelect > 0 ==> cap nhat
             {
@@ -152,21 +152,25 @@ namespace ManageLibrary.UserControls
             if (String.IsNullOrWhiteSpace(txtTenDangNhap.Text))
             {
                 MessageBox.Show("Bạn phải nhập Tên đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtTenDangNhap.Focus();
                 return false;
             }
             if (String.IsNullOrWhiteSpace(txtHoTen.Text))
             {
                 MessageBox.Show("Bạn phải nhập Họ và tên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtHoTen.Focus();
                 return false;
             }
             if (String.IsNullOrWhiteSpace(dateNamSinh.Text))
             {
                 MessageBox.Show("Bạn phải nhập Năm sinh", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dateNamSinh.Focus();
                 return false;
             }
             if (String.IsNullOrWhiteSpace(txtEmail.Text))
             {
                 MessageBox.Show("Bạn phải nhập Email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtEmail.Focus();
                 return false;
             }
             if (chkResetPassword.Checked == true
@@ -257,6 +261,12 @@ namespace ManageLibrary.UserControls
             {
                 enableControl(false);
             }
+        }
+
+        private void bntExit_Click(object sender, EventArgs e)
+        {
+            Common.showParentForm(this.ucManagerUsers);
+            Common.disposeParentForm(this);
         }
     }
 }

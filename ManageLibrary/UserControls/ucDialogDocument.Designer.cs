@@ -1,6 +1,6 @@
 ﻿namespace ManageLibrary.UserControls
 {
-    partial class ucDocumentDialog
+    partial class ucDialogDocument
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDocumentDialog));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDialogDocument));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -54,6 +54,7 @@
             this.bntReset = new DevExpress.XtraEditors.SimpleButton();
             this.cboTrangThai = new DevExpress.XtraEditors.ComboBoxEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.bntExit = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenSach.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTacGia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNamXuatBan.Properties)).BeginInit();
@@ -145,17 +146,17 @@
             // 
             this.labelControl10.Location = new System.Drawing.Point(33, 288);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(83, 13);
+            this.labelControl10.Size = new System.Drawing.Size(73, 13);
             this.labelControl10.TabIndex = 9;
-            this.labelControl10.Text = "Số ngày mượn(*)";
+            this.labelControl10.Text = "Số ngày mượn:";
             // 
             // labelControl11
             // 
             this.labelControl11.Location = new System.Drawing.Point(33, 318);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(63, 13);
+            this.labelControl11.Size = new System.Drawing.Size(53, 13);
             this.labelControl11.TabIndex = 10;
-            this.labelControl11.Text = "Trạng thái(*)";
+            this.labelControl11.Text = "Trạng thái:";
             // 
             // txtTenSach
             // 
@@ -257,7 +258,7 @@
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.Location = new System.Drawing.Point(134, 341);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(84, 35);
+            this.btnSave.Size = new System.Drawing.Size(67, 35);
             this.btnSave.TabIndex = 22;
             this.btnSave.Text = "Lưu lại";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -267,9 +268,9 @@
             this.bntReset.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntReset.Appearance.Options.UseFont = true;
             this.bntReset.Image = ((System.Drawing.Image)(resources.GetObject("bntReset.Image")));
-            this.bntReset.Location = new System.Drawing.Point(224, 341);
+            this.bntReset.Location = new System.Drawing.Point(207, 341);
             this.bntReset.Name = "bntReset";
-            this.bntReset.Size = new System.Drawing.Size(83, 35);
+            this.bntReset.Size = new System.Drawing.Size(67, 35);
             this.bntReset.TabIndex = 23;
             this.bntReset.Text = "Làm lại";
             this.bntReset.Click += new System.EventHandler(this.Reset_Click);
@@ -289,6 +290,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.bntExit);
             this.groupControl1.Controls.Add(this.cboTrangThai);
             this.groupControl1.Controls.Add(this.bntReset);
             this.groupControl1.Controls.Add(this.btnSave);
@@ -316,17 +318,29 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(403, 384);
+            this.groupControl1.Size = new System.Drawing.Size(411, 384);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin tài liệu";
             // 
-            // ucDocumentDialog
+            // bntExit
+            // 
+            this.bntExit.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntExit.Appearance.Options.UseFont = true;
+            this.bntExit.Image = ((System.Drawing.Image)(resources.GetObject("bntExit.Image")));
+            this.bntExit.Location = new System.Drawing.Point(280, 341);
+            this.bntExit.Name = "bntExit";
+            this.bntExit.Size = new System.Drawing.Size(63, 35);
+            this.bntExit.TabIndex = 25;
+            this.bntExit.Text = "Thoát";
+            this.bntExit.Click += new System.EventHandler(this.bntExit_Click);
+            // 
+            // ucDialogDocument
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupControl1);
-            this.Name = "ucDocumentDialog";
-            this.Size = new System.Drawing.Size(403, 384);
+            this.Name = "ucDialogDocument";
+            this.Size = new System.Drawing.Size(411, 384);
             ((System.ComponentModel.ISupportInitialize)(this.txtTenSach.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTacGia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNamXuatBan.Properties)).EndInit();
@@ -372,6 +386,6 @@
         private DevExpress.XtraEditors.SimpleButton bntReset;
         private DevExpress.XtraEditors.ComboBoxEdit cboTrangThai;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-
+        private DevExpress.XtraEditors.SimpleButton bntExit;
     }
 }

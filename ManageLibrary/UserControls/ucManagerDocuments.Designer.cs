@@ -77,9 +77,9 @@
             // 
             this.groupControl3.Controls.Add(this.grcDocument);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl3.Location = new System.Drawing.Point(2, 120);
+            this.groupControl3.Location = new System.Drawing.Point(2, 108);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(706, 353);
+            this.groupControl3.Size = new System.Drawing.Size(706, 365);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "Danh sách tài liệu";
             // 
@@ -89,7 +89,7 @@
             this.grcDocument.Location = new System.Drawing.Point(2, 20);
             this.grcDocument.MainView = this.gridViewDocuments;
             this.grcDocument.Name = "grcDocument";
-            this.grcDocument.Size = new System.Drawing.Size(702, 331);
+            this.grcDocument.Size = new System.Drawing.Size(702, 343);
             this.grcDocument.TabIndex = 0;
             this.grcDocument.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewDocuments});
@@ -111,6 +111,7 @@
             this.TrangThai});
             this.gridViewDocuments.GridControl = this.grcDocument;
             this.gridViewDocuments.Name = "gridViewDocuments";
+            this.gridViewDocuments.OptionsView.ShowGroupPanel = false;
             this.gridViewDocuments.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewDocuments_FocusedRowChanged);
             // 
             // ID
@@ -165,7 +166,7 @@
             this.TenNganhHoc.FieldName = "TenNganhHoc";
             this.TenNganhHoc.Name = "TenNganhHoc";
             this.TenNganhHoc.Visible = true;
-            this.TenNganhHoc.VisibleIndex = 6;
+            this.TenNganhHoc.VisibleIndex = 7;
             // 
             // TenNgonNguSach
             // 
@@ -181,7 +182,7 @@
             this.TaiBan.FieldName = "TaiBan";
             this.TaiBan.Name = "TaiBan";
             this.TaiBan.Visible = true;
-            this.TaiBan.VisibleIndex = 7;
+            this.TaiBan.VisibleIndex = 9;
             // 
             // SoLuong
             // 
@@ -189,7 +190,7 @@
             this.SoLuong.FieldName = "SoLuong";
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.Visible = true;
-            this.SoLuong.VisibleIndex = 5;
+            this.SoLuong.VisibleIndex = 6;
             // 
             // SoNgayMuon
             // 
@@ -197,7 +198,7 @@
             this.SoNgayMuon.FieldName = "SoNgayMuon";
             this.SoNgayMuon.Name = "SoNgayMuon";
             this.SoNgayMuon.Visible = true;
-            this.SoNgayMuon.VisibleIndex = 6;
+            this.SoNgayMuon.VisibleIndex = 8;
             // 
             // TrangThai
             // 
@@ -205,7 +206,7 @@
             this.TrangThai.FieldName = "TrangThaiStr";
             this.TrangThai.Name = "TrangThai";
             this.TrangThai.Visible = true;
-            this.TrangThai.VisibleIndex = 7;
+            this.TrangThai.VisibleIndex = 10;
             // 
             // groupControl2
             // 
@@ -217,14 +218,14 @@
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(2, 20);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(706, 100);
+            this.groupControl2.Size = new System.Drawing.Size(706, 88);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "Tìm kiếm";
             // 
             // btnDelete
             // 
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(281, 59);
+            this.btnDelete.Location = new System.Drawing.Point(281, 51);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(65, 30);
             this.btnDelete.TabIndex = 4;
@@ -234,7 +235,7 @@
             // btnEdit
             // 
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
-            this.btnEdit.Location = new System.Drawing.Point(190, 59);
+            this.btnEdit.Location = new System.Drawing.Point(190, 51);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(85, 30);
             this.btnEdit.TabIndex = 3;
@@ -244,7 +245,7 @@
             // btnNew
             // 
             this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
-            this.btnNew.Location = new System.Drawing.Point(99, 59);
+            this.btnNew.Location = new System.Drawing.Point(99, 51);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(85, 30);
             this.btnNew.TabIndex = 2;

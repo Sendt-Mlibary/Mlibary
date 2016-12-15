@@ -37,10 +37,15 @@ namespace ManageLibrary.BLL
         {
             return tailieuDAL.XoaTaiLieu(id);
         }
-
+        
         public DataTable Search(string p)
         {
             return tailieuDAL.Search(p);
+        }
+
+        public DataTable SearchAddBookForBorrow(string p, int idLogin)
+        {
+            return tailieuDAL.SearchAddBookForBorrow(p, idLogin);
         }
     }
 }

@@ -69,13 +69,13 @@ namespace ManageLibrary.UserControls
         {
             if (gridViewDocuments.SelectedRowsCount > 0 && idDocumentSelect > 0)
             {
-                ucDocumentDialog document = new ucDocumentDialog(this);
+                ucDialogDocument document = new ucDialogDocument(this);
                 form = new FormDialog(document);
                 form.Show();
             }
             else
             {
-                MessageBox.Show("Chưa chọn bản ghi nào để cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Chưa chọn bản ghi nào để cập nhật", "Cảnh bảo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -104,7 +104,7 @@ namespace ManageLibrary.UserControls
                         }
                         else
                         {
-                            MessageBox.Show("Có lỗi xảy ra trong quá trình ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Có lỗi xảy ra trong quá trình ", "Cảnh bảo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
@@ -115,14 +115,14 @@ namespace ManageLibrary.UserControls
             }
             else
             {
-                MessageBox.Show("Chưa chọn tài liệu nào để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Chưa chọn tài liệu nào để xóa", "Cảnh bảo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
             idDocumentSelect = 0;
-            ucDocumentDialog document = new ucDocumentDialog(this);
+            ucDialogDocument document = new ucDialogDocument(this);
             form = new FormDialog(document);
             form.Show();
         }
@@ -136,5 +136,7 @@ namespace ManageLibrary.UserControls
             DataTable dt = tlBll.Search(searchControl1.Text);
             grcDocument.DataSource = dt;//ten gridview
         }
+
+
     }
 }
