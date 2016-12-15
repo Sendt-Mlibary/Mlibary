@@ -726,6 +726,46 @@ namespace ManageLibrary.ConnectDB
            
             return dataSet;
         }
+
+        /// <summary>
+        /// Lấy các bản ghi từ cơ sở dữ liệu
+        /// </summary>
+        /// <param name="commandText">Chuỗi câu lệnh truy vấn Sql</param>
+        /// <param name="commandParameters">Mảng các tham số truyền tương ứng cần truyền vào</param>
+        /// <returns>Id insert khi thêm mới</returns>
+        public int InsertGenId(string commandText , DatabaseParamCls[] commandParameters)
+        {
+            int modified = -1;
+            DataTable dataTable = new DataTable();
+            SqlConnection connection = new SqlConnection(this._ConnectionString);
+            SqlCommand selectCommand = connection.CreateCommand();
+            bool mustCloseConnection = false;
+            SqlParameter[] parameterArray = this.ConvertFromDataParam(commandParameters);
+            this.PrepareCommand(selectCommand, connection, null, CommandType.Text, commandText, parameterArray, out mustCloseConnection);
+            SqlTransaction transaction = connection.BeginTransaction();
+            selectCommand.Transaction = transaction;
+            try
+            {
+                modified = selectCommand.ExecuteNonQuery();
+                transaction.Commit();
+            }
+            catch (Exception exception)
+            {
+                transaction.Rollback();
+                string msg = exception.Message.ToString();
+                msg = CorrectMsg(msg);
+                MessageBox.Show(msg, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                log.Error(exception);
+            }
+            finally
+            {
+                selectCommand.Parameters.Clear();
+                connection.Close();
+            }
+            return modified;
+
+        }
+
         public override void saveLog(string uid, string action)
         {
             string sql = "prd_Log_insert";

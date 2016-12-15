@@ -9,32 +9,49 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ManageLibrary.DAO;
 using ManageLibrary.UserControls;
+using ManageLibrary.Util;
 
 namespace ManageLibrary
 {
     public partial class Home : Form
     {
-        private NhanVienDb nvDb;
         private NhanVienDb loginUser;
-        private Login loginDlg;
-        public NhanVienDb NvDb
+
+        public NhanVienDb LoginUser
         {
-            get { return nvDb; }
-            set { nvDb = value; }
+            get
+            {
+                return loginUser;
+            }
+
+            set
+            {
+                loginUser = value;
+            }
         }
 
-        public Home(Login loginDlg)
+        public void setData(NhanVienDb LoginUser)
         {
             // Kiem tra viec Login he thong
-            if (loginDlg.NvDb != null)
+            if (LoginUser != null)
             {
-                InitializeComponent();
-                this.nvDb = loginDlg.NvDb;
-                this.loginDlg = loginDlg;
-                this.loginUser = loginDlg.NvDb;
-                this.navBarGroup2.Caption = "Home - " + loginDlg.NvDb.HoTen + " (" + loginDlg.NvDb.PhanQuyenStr + ")";
+                this.LoginUser = LoginUser;
+                this.navBarGroup2.Caption = "Home - " + LoginUser.HoTen + " (" + LoginUser.PhanQuyenStr + ")";
                 addUsercontrol(new ucHome());
+                if(LoginUser.PhanQuyen != null
+                    && LoginUser.PhanQuyen ==Constants.PHAN_QUYEN.ADMIN)
+                {
+                    bntManagerUser.Visible = true;
+                }
+                else
+                {
+                    bntManagerUser.Visible = false;
+                }
             }
+        }
+        public Home()
+        {
+              InitializeComponent();
         }
 
         public void addUsercontrol(UserControl uc)
@@ -51,30 +68,37 @@ namespace ManageLibrary
             }
         }
 
-        private void navBarItem4_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void bntUcManagerUsers_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             addUsercontrol(new ucManagerUsers(this));
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
-
+            addUsercontrol(new ucHome());
+            Login frmlog = new Login(this);
+            frmlog.ShowDialog();
         }
 
         private void Home_FormClosed(object sender, FormClosedEventArgs e)
         {
-            loginDlg.Dispose();
+            //loginDlg.Dispose();
         }
 
-        private void navBarItem5_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void ucManagerDocuments_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             addUsercontrol(new ucManagerDocuments(this));
         }
 
-        private void navBarItem7_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void bntManagerMember_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
-            this.Dispose();
-            loginDlg.Logout();
+            addUsercontrol(new ucManagerMember(this));
+        }
+
+        private void bntLogout_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            Login frmlog = new Login(this);
+            frmlog.ShowDialog();
         }
     }
 }
