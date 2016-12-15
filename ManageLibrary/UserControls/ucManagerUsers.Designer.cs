@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucManagerUsers));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -78,19 +79,22 @@
             // 
             this.groupControl3.Controls.Add(this.grwNhanVien);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl3.Location = new System.Drawing.Point(2, 127);
+            this.groupControl3.Location = new System.Drawing.Point(2, 109);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(867, 307);
+            this.groupControl3.Size = new System.Drawing.Size(867, 325);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "Danh sách nhân viên";
             // 
             // grwNhanVien
             // 
             this.grwNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridLevelNode1.RelationName = "Level1";
+            this.grwNhanVien.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
             this.grwNhanVien.Location = new System.Drawing.Point(2, 20);
             this.grwNhanVien.MainView = this.gridViewNhanVien;
             this.grwNhanVien.Name = "grwNhanVien";
-            this.grwNhanVien.Size = new System.Drawing.Size(863, 285);
+            this.grwNhanVien.Size = new System.Drawing.Size(863, 303);
             this.grwNhanVien.TabIndex = 1;
             this.grwNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewNhanVien});
@@ -109,10 +113,14 @@
             this.QueQuan,
             this.PhanQuyen});
             this.gridViewNhanVien.GridControl = this.grwNhanVien;
+            this.gridViewNhanVien.GroupCount = 1;
             this.gridViewNhanVien.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "ID", this.TenDangNhap, "Tổng bản ghi")});
             this.gridViewNhanVien.Name = "gridViewNhanVien";
             this.gridViewNhanVien.OptionsBehavior.Editable = false;
+            this.gridViewNhanVien.OptionsView.ShowGroupPanel = false;
+            this.gridViewNhanVien.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.PhanQuyen, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.gridViewNhanVien.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Never;
             this.gridViewNhanVien.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewNhanVien_FocusedRowChanged);
             // 
@@ -204,7 +212,7 @@
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(2, 20);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(867, 107);
+            this.groupControl2.Size = new System.Drawing.Size(867, 89);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "Tìm kiếm";
             // 
@@ -227,9 +235,9 @@
             this.bntDelete.Image = ((System.Drawing.Image)(resources.GetObject("bntDelete.Image")));
             this.bntDelete.ImageIndex = 12;
             this.bntDelete.ImageList = this.imgCol16x;
-            this.bntDelete.Location = new System.Drawing.Point(290, 59);
+            this.bntDelete.Location = new System.Drawing.Point(290, 52);
             this.bntDelete.Name = "bntDelete";
-            this.bntDelete.Size = new System.Drawing.Size(69, 29);
+            this.bntDelete.Size = new System.Drawing.Size(69, 30);
             this.bntDelete.TabIndex = 19;
             this.bntDelete.Text = "Xóa";
             this.bntDelete.Click += new System.EventHandler(this.bntDelete_Click);
@@ -344,9 +352,9 @@
             this.bntEdit.Image = ((System.Drawing.Image)(resources.GetObject("bntEdit.Image")));
             this.bntEdit.ImageIndex = 34;
             this.bntEdit.ImageList = this.imgCol16x;
-            this.bntEdit.Location = new System.Drawing.Point(205, 59);
+            this.bntEdit.Location = new System.Drawing.Point(205, 53);
             this.bntEdit.Name = "bntEdit";
-            this.bntEdit.Size = new System.Drawing.Size(79, 29);
+            this.bntEdit.Size = new System.Drawing.Size(79, 30);
             this.bntEdit.TabIndex = 18;
             this.bntEdit.Text = "Cập nhật";
             this.bntEdit.Click += new System.EventHandler(this.bntEdit_Click);
@@ -356,9 +364,9 @@
             this.bntNew.Image = ((System.Drawing.Image)(resources.GetObject("bntNew.Image")));
             this.bntNew.ImageIndex = 69;
             this.bntNew.ImageList = this.imgCol16x;
-            this.bntNew.Location = new System.Drawing.Point(109, 59);
+            this.bntNew.Location = new System.Drawing.Point(109, 52);
             this.bntNew.Name = "bntNew";
-            this.bntNew.Size = new System.Drawing.Size(90, 30);
+            this.bntNew.Size = new System.Drawing.Size(90, 31);
             this.bntNew.TabIndex = 17;
             this.bntNew.Text = "Thêm mới";
             this.bntNew.Click += new System.EventHandler(this.bntNew_Click);

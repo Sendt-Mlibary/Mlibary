@@ -181,5 +181,48 @@ namespace ManageLibrary.DAO
                 _trangThai = value;
             }
         }
+
+        public string TenNgonNguSach
+        {
+            get
+            {
+                return _tenNgonNguSach;
+            }
+
+            set
+            {
+                _tenNgonNguSach = value;
+            }
+        }
+
+        public string TenNganhHoc
+        {
+            get
+            {
+                return _tenNganhHoc;
+            }
+
+            set
+            {
+                _tenNganhHoc = value;
+            }
+        }
+
+        public string TenTheLoai
+        {
+            get
+            {
+                return _tenTheLoai;
+            }
+
+            set
+            {
+                _tenTheLoai = value;
+            }
+        }
+
+        private string _tenNganhHoc;
+        private string _tenNgonNguSach;     
+        private string _tenTheLoai;
     }
 }

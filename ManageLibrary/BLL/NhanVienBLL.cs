@@ -15,7 +15,7 @@ namespace ManageLibrary.BLL
             nhanVienDAL = new NhanVienDAL();
         }
 
-        public bool DangNhap(NhanVienDb nv)
+        public NhanVienDb DangNhap(NhanVienDb nv)
         {
             nv.MatKhau = Common.md5(nv.MatKhau);
             Console.WriteLine(nv.MatKhau);

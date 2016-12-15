@@ -2,6 +2,7 @@
 using ManageLibrary.DAO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace ManageLibrary.BLL
         TaiLieuDAL tailieuDAL;
         public TaiLieuBLL()
         {
-            tailieuDAL = new TaiLieuDAL();
+            tailieuDAL = new TaiLieuDAL();  // khoi tao truoc khi su dung
         }
         public bool ThemTaiLieu(TaiLieuDb tl)
         {
@@ -22,6 +23,29 @@ namespace ManageLibrary.BLL
         public TaiLieuDb getTaiLieuById(int iD)
         {
             return tailieuDAL.getTaiLieuById(iD);
+        }
+        public DataTable GetAll()
+        {
+            return tailieuDAL.GetAll();
+        }
+
+        public bool SuaTaiLieu(TaiLieuDb tl)
+        {
+            return tailieuDAL.SuaTaiLieu(tl);
+        }
+        public bool XoaTaiLieu(int id)
+        {
+            return tailieuDAL.XoaTaiLieu(id);
+        }
+        
+        public DataTable Search(string p)
+        {
+            return tailieuDAL.Search(p);
+        }
+
+        public DataTable SearchAddBookForBorrow(string p, int idLogin)
+        {
+            return tailieuDAL.SearchAddBookForBorrow(p, idLogin);
         }
     }
 }

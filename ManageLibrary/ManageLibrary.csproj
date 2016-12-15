@@ -36,25 +36,40 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>E:\DevExpress 10.2.4\DevExpress 10.2.4\DXPerience 10.2.4 Crack\DevExpress.CodeRush.Common.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.CodeRush.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Parser, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="DevExpress.Data.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="DevExpress.Xpo.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,13 +81,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\MemberBLL.cs" />
+    <Compile Include="BLL\NganhHocBLL.cs" />
+    <Compile Include="BLL\NgonNguBLL.cs" />
     <Compile Include="BLL\NhanVienBLL.cs" />
+    <Compile Include="BLL\PhieuMuonBLL.cs" />
     <Compile Include="BLL\TaiLieuBLL.cs" />
+    <Compile Include="BLL\TheLoaiBLL.cs" />
     <Compile Include="ConnectDB\DataProvider.cs" />
+    <Compile Include="DAL\MemberDAL.cs" />
+    <Compile Include="DAL\NganhHocDAL.cs" />
+    <Compile Include="DAL\NgonNguDAL.cs" />
     <Compile Include="DAL\NhanVienDAL.cs" />
+    <Compile Include="DAL\PhieuMuonDAL.cs" />
     <Compile Include="DAL\TaiLieuDAL.cs" />
+    <Compile Include="DAL\TheLoaiDAL.cs" />
+    <Compile Include="DAO\ChiTietPhieuMuonDb.cs" />
+    <Compile Include="DAO\MemberDb.cs" />
+    <Compile Include="DAO\NganhHocDb.cs" />
+    <Compile Include="DAO\NgonNguSachDb.cs" />
     <Compile Include="DAO\NhanVienDb.cs" />
+    <Compile Include="DAO\PhieuMuonDb.cs" />
     <Compile Include="DAO\TaiLieuDb.cs" />
+    <Compile Include="DAO\TheLoaiSachDb.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,25 +116,37 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerUsers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManagerUsers.Designer.cs">
-      <DependentUpon>ManagerUsers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ManagerBooks.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManagerBooks.Designer.cs">
-      <DependentUpon>ManagerBooks.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControls\ucDocumentDialog.cs">
+    <Compile Include="UserControls\ucDialogAddBookForBorrow.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ucDocumentDialog.Designer.cs">
-      <DependentUpon>ucDocumentDialog.cs</DependentUpon>
+    <Compile Include="UserControls\ucDialogAddBookForBorrow.Designer.cs">
+      <DependentUpon>ucDialogAddBookForBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDialogBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDialogBill.Designer.cs">
+      <DependentUpon>ucDialogBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDialogCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDialogCategory.Designer.cs">
+      <DependentUpon>ucDialogCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDialogDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDialogDocument.Designer.cs">
+      <DependentUpon>ucDialogDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDialogDocumentWarning.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDialogDocumentWarning.Designer.cs">
+      <DependentUpon>ucDialogDocumentWarning.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ucHome.cs">
       <SubType>UserControl</SubType>
@@ -111,11 +154,23 @@
     <Compile Include="UserControls\ucHome.Designer.cs">
       <DependentUpon>ucHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucManagerCategorys.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucManagerCategorys.Designer.cs">
+      <DependentUpon>ucManagerCategorys.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucManagerDocuments.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ucManagerDocuments.Designer.cs">
       <DependentUpon>ucManagerDocuments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucManagerMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucManagerMember.Designer.cs">
+      <DependentUpon>ucManagerMember.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ucManagerUsers.cs">
       <SubType>UserControl</SubType>
@@ -123,11 +178,23 @@
     <Compile Include="UserControls\ucManagerUsers.Designer.cs">
       <DependentUpon>ucManagerUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ucUserDialog.cs">
+    <Compile Include="UserControls\ucDialogMember.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ucUserDialog.Designer.cs">
-      <DependentUpon>ucUserDialog.cs</DependentUpon>
+    <Compile Include="UserControls\ucDialogMember.Designer.cs">
+      <DependentUpon>ucDialogMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDialogReNewBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDialogReNewBooks.Designer.cs">
+      <DependentUpon>ucDialogReNewBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDialogUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDialogUser.Designer.cs">
+      <DependentUpon>ucDialogUser.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\FormDialog.cs">
       <SubType>Form</SubType>
@@ -143,29 +210,47 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucDocumentDialog.resx">
-      <DependentUpon>ucDocumentDialog.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ucDialogAddBookForBorrow.resx">
+      <DependentUpon>ucDialogAddBookForBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDialogBill.resx">
+      <DependentUpon>ucDialogBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDialogCategory.resx">
+      <DependentUpon>ucDialogCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDialogDocument.resx">
+      <DependentUpon>ucDialogDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDialogDocumentWarning.resx">
+      <DependentUpon>ucDialogDocumentWarning.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucHome.resx">
       <DependentUpon>ucHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucManagerCategorys.resx">
+      <DependentUpon>ucManagerCategorys.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucManagerDocuments.resx">
       <DependentUpon>ucManagerDocuments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucManagerMember.resx">
+      <DependentUpon>ucManagerMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucManagerUsers.resx">
       <DependentUpon>ucManagerUsers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucUserDialog.resx">
-      <DependentUpon>ucUserDialog.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ucDialogMember.resx">
+      <DependentUpon>ucDialogMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDialogReNewBooks.resx">
+      <DependentUpon>ucDialogReNewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDialogUser.resx">
+      <DependentUpon>ucDialogUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\FormDialog.resx">
       <DependentUpon>FormDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManagerUsers.resx">
-      <DependentUpon>ManagerUsers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManagerBooks.resx">
-      <DependentUpon>ManagerBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -189,7 +274,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

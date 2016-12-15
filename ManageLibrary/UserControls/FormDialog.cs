@@ -12,17 +12,19 @@ namespace ManageLibrary.UserControls
 {
     public partial class FormDialog : Form
     {
+        private UserControl uc;
         public FormDialog(UserControl uc)
         {
             InitializeComponent();
+            this.uc = uc;
             pnlUsercontrol.Controls.Clear();
-            pnlUsercontrol.Controls.Add(uc);
-            uc.Dock = DockStyle.Fill;
+            pnlUsercontrol.Controls.Add(this.uc);
+            this.uc.Dock = DockStyle.Fill;
         }
-
-        private void FormDialog_Load(object sender, EventArgs e)
+        
+        private void FormDialog_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            e.Cancel = true;
         }
     }
 }

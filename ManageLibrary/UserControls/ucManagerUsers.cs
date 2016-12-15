@@ -47,25 +47,26 @@ namespace ManageLibrary.UserControls
             DataRowView row = (DataRowView)item;
             if (row != null)
             {
-                idUserSelect = Convert.ToInt16(row["Id"].ToString());
+                idUserSelect = Convert.ToInt32(row["Id"].ToString());
                 userNameSelect = row["TenDangNhap"].ToString();
             }
         }
 
         private void bntNew_Click(object sender, EventArgs e)
         {
-            IsActive = Constants.IsActive.CREATE;
-            ucUserDialog uc = new ucUserDialog(this);
+            idUserSelect = 0;
+            ucDialogUser uc = new ucDialogUser(this);
             form = new FormDialog(uc);
+            form.Size = new Size(uc.Width + 50, uc.Height + 30);
             form.Show();
         }
         private void bntEdit_Click(object sender, EventArgs e)
         {
             if (gridViewNhanVien.SelectedRowsCount > 0 && idUserSelect > 0)
             {
-                IsActive = Constants.IsActive.UPDATE;
-                ucUserDialog uc = new ucUserDialog(this);
+                ucDialogUser uc = new ucDialogUser(this);
                 form = new FormDialog(uc);
+                form.Size = new Size(uc.Width+50, uc.Height+30);
                 form.Show();
             }
             else

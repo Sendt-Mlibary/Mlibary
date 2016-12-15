@@ -225,3 +225,284 @@ D:\Do an\ManageLibrary_bk\ManageLibrary\obj\Debug\ManageLibrary.ManagerBooks.res
 D:\Do an\ManageLibrary_bk\ManageLibrary\obj\Debug\ManageLibrary.Properties.Resources.resources
 D:\Do an\ManageLibrary_bk\ManageLibrary\obj\Debug\ManageLibrary.csproj.GenerateResource.Cache
 D:\Do an\ManageLibrary_bk\ManageLibrary\obj\Debug\ManageLibrary.exe.licenses
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.exe.config
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.exe
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.pdb
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.exe
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.pdb
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Common.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.Utils.v6.3.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.XtraLayout.v6.3.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.Data.v6.3.dll
+F:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Common.xml
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.csprojResolveAssemblyReference.cache
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Home.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Login.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDocumentDialog.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucHome.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerDocuments.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerUsers.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucUserDialog.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.FormDialog.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Properties.Resources.resources
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.csproj.GenerateResource.Cache
+F:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.exe.licenses
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.exe.config
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.exe
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.pdb
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.exe
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.pdb
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Common.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Data.v15.1.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Printing.v15.1.Core.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Utils.v15.1.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraBars.v15.1.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraEditors.v15.1.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraGrid.v15.1.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraLayout.v15.1.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraNavBar.v15.1.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraPrinting.v15.1.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\EnvDTE.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\EnvDTE80.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\stdole.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Sparkline.v15.1.Core.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.RichEdit.v15.1.Core.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraTreeList.v15.1.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\Microsoft.MSXML.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Office.v15.1.Core.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Printing.v15.1.Core.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Data.v15.1.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Utils.v15.1.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraBars.v15.1.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraEditors.v15.1.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraGrid.v15.1.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraLayout.v15.1.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraNavBar.v15.1.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraPrinting.v15.1.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Sparkline.v15.1.Core.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.RichEdit.v15.1.Core.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraTreeList.v15.1.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\DevExpress.Office.v15.1.Core.xml
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Printing.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Printing.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Printing.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Printing.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Data.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Data.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Data.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Data.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Utils.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Utils.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Utils.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Utils.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraBars.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraBars.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraBars.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraBars.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraEditors.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraEditors.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraEditors.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraEditors.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraGrid.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraGrid.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraGrid.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraGrid.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraLayout.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraLayout.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraLayout.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraLayout.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraNavBar.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraNavBar.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraNavBar.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraNavBar.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraPrinting.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraPrinting.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraPrinting.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraPrinting.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Sparkline.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Sparkline.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Sparkline.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Sparkline.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.RichEdit.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.RichEdit.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.RichEdit.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.RichEdit.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraTreeList.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraTreeList.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraTreeList.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraTreeList.v15.1.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Office.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Office.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Office.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Office.v15.1.Core.resources.dll
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.csprojResolveAssemblyReference.cache
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Home.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Login.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDocumentDialog.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucHome.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerDocuments.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerUsers.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucUserDialog.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.FormDialog.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Properties.Resources.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.csproj.GenerateResource.Cache
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.exe.licenses
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerMember.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucMemberDialog.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerCategorys.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucCategoryDialog.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucBillDialog.resources
+D:\Do an\DA\Mlibary-20161124T064420Z\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerBills.resources
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.exe.config
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.exe
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.pdb
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.exe
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ManageLibrary.pdb
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Common.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.Utils.v6.3.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.XtraLayout.v6.3.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.Data.v6.3.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Common.xml
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.csprojResolveAssemblyReference.cache
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Home.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Login.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucHome.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerCategorys.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerDocuments.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerMember.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucManagerUsers.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.FormDialog.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.Properties.Resources.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.csproj.GenerateResource.Cache
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.exe.licenses
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Data.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Office.v15.1.Core.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Printing.v15.1.Core.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.RichEdit.v15.1.Core.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Utils.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Xpo.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraBars.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraEditors.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraGrid.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraLayout.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraNavBar.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraPrinting.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraRichEdit.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\EnvDTE80.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\stdole.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Sparkline.v15.1.Core.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraTreeList.v15.1.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\Microsoft.MSXML.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Office.v15.1.Core.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Printing.v15.1.Core.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Data.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.RichEdit.v15.1.Core.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Utils.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Xpo.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraBars.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraEditors.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraGrid.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraLayout.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraNavBar.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraPrinting.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraRichEdit.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.Sparkline.v15.1.Core.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.XtraTreeList.v15.1.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Office.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Office.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Office.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Office.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Printing.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Printing.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Printing.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Printing.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Data.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Data.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Data.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Data.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.RichEdit.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.RichEdit.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.RichEdit.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.RichEdit.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Utils.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Utils.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Utils.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Utils.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Xpo.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Xpo.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Xpo.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Xpo.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraBars.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraBars.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraBars.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraBars.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraEditors.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraEditors.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraEditors.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraEditors.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraGrid.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraGrid.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraGrid.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraGrid.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraLayout.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraLayout.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraLayout.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraLayout.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraNavBar.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraNavBar.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraNavBar.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraNavBar.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraPrinting.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraPrinting.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraPrinting.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraPrinting.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraRichEdit.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraRichEdit.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraRichEdit.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraRichEdit.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.Sparkline.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.Sparkline.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.Sparkline.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.Sparkline.v15.1.Core.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\de\DevExpress.XtraTreeList.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\es\DevExpress.XtraTreeList.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ja\DevExpress.XtraTreeList.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\ru\DevExpress.XtraTreeList.v15.1.resources.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Core.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Extensions.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Parser.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Platform.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.XtraBars.v6.3.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.StructuralParser.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.VSCore.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Interop.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Decompiler.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.MetaData.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.IntelliRush.Core.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\Extensibility.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.XtraTreeList.v6.3.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\VSLangProj.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\VSLangProj80.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Controls.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Localization.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.AssemblyResolver.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Mvvm.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Mvvm.UI.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\VSLangProj2.dll
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Core.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.Extensions.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.Parser.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.StructuralParser.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.CodeRush.VSCore.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\DevExpress.DXCore.MetaData.xml
+E:\IT_Coder\Mlibary\ManageLibrary\bin\Debug\Extensibility.xml
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDialogAddBookForBorrow.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDialogBill.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDialogCategory.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDialogDocument.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDialogDocumentWarning.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDialogMember.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDialogReNewBooks.resources
+E:\IT_Coder\Mlibary\ManageLibrary\obj\Debug\ManageLibrary.UserControls.ucDialogUser.resources

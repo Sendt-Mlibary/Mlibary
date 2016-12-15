@@ -40,7 +40,7 @@
             this.pictureEdit1.Location = new System.Drawing.Point(0, 0);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(688, 388);
+            this.pictureEdit1.Size = new System.Drawing.Size(787, 440);
             this.pictureEdit1.TabIndex = 0;
             // 
             // ucHome
@@ -49,7 +49,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pictureEdit1);
             this.Name = "ucHome";
-            this.Size = new System.Drawing.Size(688, 388);
+            this.Size = new System.Drawing.Size(787, 440);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
